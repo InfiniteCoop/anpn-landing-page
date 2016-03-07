@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Agence Nationale des Parcs Nationaux du Gabon">
-  <meta name="author" content="Agence Nationale des Parcs Nationaux du Gabon (ANPN), and World Resources Institute (WRI)">
+  <meta name="description" content="Plan National d'Affectation des Terres du Gabon">
+  <meta name="author" content="Agence Gabonaise d'Etudes et d'Observations Spatiales (AGEOS) and World Resources Institute (WRI)">
 
-  <title>Agence Nationale des Parcs Nationaux du Gabon</title>
+  <title>Système d'Informations des Aires Protégées</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,60 +30,105 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500&amp;subset=latin" media="all">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500&amp;subset=latin" media="all">
+
       </head>
 
       <body>
 
         <!-- Header Section-->
-        <header class="intro" id="intro">
-          <div class="intro-body container">
-            <div class="row">
-              <div id="flag" class="col-xs-1 col-xs-offset-11 pull-right flag">
-                <!-- FLAG GOES HERE -->
-              </div>
-            </div>
-            <div class="row lang-button text-right">
-              <button type="button" class="btn btn-default" onclick="langtoggle('fr')" id="FrButton"></button>
-              <button type="button" class="btn btn-default" onclick="langtoggle('en')" id="EngButton"></button>
-            </div>
-            <div class="row title-background">
-              <div class="col-md-10 col-md-offset-1">
-                <h1 class="brand-heading" id="Title"></h1>
-                <div class="subtitle-text">
-                  <p class="intro-text" id="SubTitle" ></p>
+        <header id="intro" class="intro">
+          <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <div class="carousel-caption">
+                  <p class="h3" id="CaptionTitle1"></p>
+                  <p class="h4" id="Caption1"></p>
                 </div>
               </div>
+                <div class="item">
+                  <div class="carousel-caption">
+                    <p class="h3" id="CaptionTitle2"></p>
+                    <p class="h4" id="Caption2"></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="carousel-caption">
+                    <p class="h3" id="CaptionTitle3"></p>
+                    <p class="h4" id="Caption3"></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#carousel" data-slide="prev"></a>
+              <a class="carousel-control right" href="#carousel" data-slide="next"></a>
             </div>
 
-            <!-------- MODULE ICONS -------->
-            <div class="container content-section">
-              <div class="row center" >
-             <div class="col-xs-6 col-sm-4 col-sm-offset-4"> 
-              <a id="applicationLink">
-                <img src="img/plan-icon.svg" id="plan-icon" alt="Analyze the Data" class="img-responsive module-icon">
-                <h3 id="ApplicationModule"></h3>
-              </a>    
+            <div class="intro-body container">
+              <div class="row">
+                <div id="flag" class="col-xs-1 col-xs-offset-11 pull-right flag">
+                  <!-- FLAG GOES HERE -->
+                </div>
+              </div>
+              <div class="row lang-button text-right">
+                <button type="button" class="btn btn-default" onclick="langtoggle('fr')" id="FrButton"></button>
+                <button type="button" class="btn btn-default" onclick="langtoggle('en')" id="EngButton"></button>             
+              </div>
+              <div class="row title-background">
+                <div class="col-md-10 col-md-offset-1">
+                  <h1 class="brand-heading" id="Title"></h1>
+                  <div class="subtitle-text">
+                    <p class="intro-text" id="SubTitle" ></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-------- MODULE ICONS -------->
+              <div class="container content-section">
+                <div class="row center" >
+                  <div class="col-sm-4">
+                    <a href="" id="mapLink">
+                     <img src="img/map-icon.svg" id="map-icon" alt="Global data" class="img-responsive module-icon">
+                     <h3 id="Module1"></h3>
+                   </a>
+                 </div>
+                 <div class="col-sm-4">
+                  <a href="" id="planLink">
+                   <img src="img/plan-icon.svg" id="plan-icon" alt="Tourism" class="img-responsive module-icon">
+                   <h3 id="Module2"></h3>
+                 </a>
+               </div>
+               <div class="col-sm-4"> 
+                <a id="docsLink">
+                  <img src="img/docs-icon.svg" id="docs-icon" alt="Pêche" class="img-responsive module-icon">
+                  <h3 id="Module3"></h3>
+                </a>    
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="pull-left">
-        <a class="copyright" target="_blank" href="http://www.jbdodane.com/">Photo © jbdodane.com</a>
-      </div> 
-    </header> 
+        <div class="pull-left">
+          <a class="copyright" target="_blank" href="http://www.jbdodane.com/">Photo © jbdodane.com</a>
+        </div> 
+      </header>
 
-    <!-- About the Atlas Section -->
-    <section id="about" class="container content-section">
-      <div class="row bodyRow">
-        <h2 id="AboutTitle">
-          <!-- Insert title here -->
-        </h2>
-        <div id="AboutText">
+      <!-- About the Atlas Section -->
+      <section id="about" class="container content-section">
+        <div class="row bodyRow">
+          <h2 id="AboutTitle">
+            <!-- Insert title here -->
+          </h2>
+          <div id="AboutText">
+          </div>
         </div>
-      </div>
-      <hr noshade>
-    </section>
+        <hr noshade>
+      </section>
 
       <section id="apps" class="container content-section">
         <h4 class="row bodyRow" id="AppTitle"></h4>
@@ -118,7 +163,6 @@
       </section>
 
       <!-- Footer -->
-      <!-- Footer -->
       <footer>
         <div class="container">
           <p class="footerTitle" id="ContactUs"></p>
@@ -131,24 +175,24 @@
         </div>
       </footer>
 
-    <!--JS object containing all country-specific information-->
-    <script src="js/content.js"></script>
+      <!--JS object containing all country-specific information-->
+      <script src="js/gab.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Social Share Kit JS -->
-    <script src="js/social-share-kit.js"></script>
+      <!-- Social Share Kit JS -->
+      <script src="js/social-share-kit.js"></script>
 
-    <!-- Custom JavaScript -->
-    <script src="js/main.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/main.js"></script>
 
-  </body>
+    </body>
 
-  </html>
+    </html>

@@ -1,0 +1,112 @@
+   var lang = {
+    en: {
+        FrButton: "Français",
+        EngButton: "English",
+        Title: "Protected Areas Informations System",
+        SubTitle: "National Agency of National Parks System",
+        Module1: "Global Data",
+        Module2: "Tourism",
+        Module3: "Peach",
+        CaptionTitle1: "All public database",        
+        Caption1: "Find public database use by ANPN",
+        CaptionTitle2: "Tourism",        
+        Caption2: "Explore the tourism potential of the National Parks",
+        CaptionTitle3: "Peach",        
+        Caption3: "Explore peach data in Gabon",
+        AboutTitle: "About the ANPN",
+        AboutText: "<p>Protected Areas Information System (PAIS) is a daily working tool for policy makers and managers of protected areas under the supervision of the National Agency of National Parks (ANPN). The main objective of this system is to enable monitoring of the many activities taking place in the parks, but also to allow interconnection between different actors ANPN regardless of their location around the world.</p><p>PAIS allows the sharing and pooling of information of all of Gabon's national parks system. Indeed, it enables collaboration and data management of protected areas in order to facilitate access and dissemination to the benefit of development and enhancement of these conserved areas.</p><p>Modern and effective management of geographic data ANPN facilitates data mining. Automatically and depending on the user's choice, the system will initiate statistical and spatial analysis and display the results that can be exploited in other documents.</p>",
+        AppTitle: "Other applications",
+        PartnerTitle: "A partnership between",
+        Share: "Share this page",
+        ContactUs: "Contact us",
+        Contact1: "<p>Ghislain Moussavou</p><p><i>Gabon National Coordinator, WRI</i></p><p><a href='mailto:gmoussavou@wri.org'>gmoussavou@wri.org</a></p>",
+        Contact2: "<p>Pétronie Carmela MABIALA</p><p><i>GIS Technical, ANPN</i></p><p><a href='mailto:petrocarmela@yahoo.fr'>petrocarmela@yahoo.fr</a></p>"
+    },
+    
+    fr: {
+        FrButton: "Français",
+        EngButton: "English",        
+        Title: "Système d'Informations des Aires Protégées",
+        SubTitle: "Système de l'Agence Nationale des Parcs Nationaux",
+        Module1: "Données Globales",
+        Module2: "Tourisme",
+        Module3: "Pêche",
+        CaptionTitle1: "Données globales",        
+        Caption1: "Trouvez les données de base utilisées par l'ANPN",
+        CaptionTitle2: "Tourisme",        
+        Caption2: "Explorer le potentiel touristique des parcs Nationaux",
+        CaptionTitle3: "La pêche",        
+        Caption3: "Découvrez la pêche par la géographiques",       
+        AboutTitle: "A Propos du SIAP",
+        AboutText: "<p>Le Système d’Information des Aires Protégées (SIAP) est un outil de travail quotidien pour les décideurs et les gestionnaires des aires protégées sous tutelle de l’Agence Nationale des Parcs Nationaux (ANPN). L’objectif principal de ce système est de permettre un suivi des nombreuses activités qui se déroulent au sein des parcs, mais aussi, de permettre une interconnexion entre les différents acteurs de l’ANPN quel que soit leur emplacement sur le globe.</p><p>Le SIAP permet le partage et la mutualisation de l’information de l’ensemble du réseau des parcs nationaux du Gabon. En effet, il permet la collaboration et la gestion des données sur les aires protégées en vue d’en faciliter l’accès et la diffusion au bénéfice de l’aménagement et de la valorisation de ces espaces conservés.</p><p>La gestion moderne et efficace des données géographiques de l’ANPN facilite l’exploitation des données. De manière automatisée et en fonction des choix de l’utilisateur, le système pourra lancer des analyses statistiques et spatiales et en afficher les résultats qui pourront être exploités dans d’autres documents.</p>",
+        AppTitle: "Autres applications",
+        PartnerTitle: "Un partenariat entre",
+        Share: "Partager cette page",
+        ContactUs: "Contactez-nous",
+        Contact1: "<p>Ghislain Moussavou</p><p><i>Coordinateur National du Gabon, WRI</i></p><p><a href='mailto:gmoussavou@wri.org'>gmoussavou@wri.org</a></p>",
+        Contact2: "<p>Pétronie Carmela MABIALA</p><p><i>GIS Technical, ANPN</i></p><p><a href='mailto:petrocarmela@yahoo.fr'>petrocarmela@yahoo.fr</a></p>"
+    }
+}
+
+var flag = {
+    href: "http://www.parcsgabon.org/",
+    src: "img/flag/anpn-logo-sm.png",
+}
+
+var bcgImage = {
+    src: "url(img/title-bg.jpg) no-repeat center center scroll"
+}
+
+var link = {
+    en: {
+        mapLink: "http://anpn.maps.arcgis.com/apps/webappviewer/index.html?id=e60071432e144899a32cb339864c1d2c",
+        planLink: "http://anpn.maps.arcgis.com/apps/MapTour/index.html?appid=8998a92632f64931be766656109e9dca&edit=true&folderid=b1449142ca8945acad1686e9533f40ed",
+        docsLink: "http://ageos.maps.arcgis.com/apps/MapJournal/index.html?appid=d3f4bf5903a545de9ebe20314cfb9332"
+
+    },
+    fr: {
+        mapLink: "http://anpn.maps.arcgis.com/apps/webappviewer/index.html?id=e60071432e144899a32cb339864c1d2c",
+        planLink: "http://anpn.maps.arcgis.com/apps/MapTour/index.html?appid=8998a92632f64931be766656109e9dca&edit=true&folderid=b1449142ca8945acad1686e9533f40ed",
+        docsLink: "http://ageos.maps.arcgis.com/apps/MapJournal/index.html?appid=d3f4bf5903a545de9ebe20314cfb9332"
+    }
+}
+
+var apps = {
+    ageos: {
+        href: "http://www.ageos.ga/plateforme/",
+        src: "img/logo/ageos-logo-bw.png",
+        srcActive: "img/logo/ageos-logo.png",
+        alt: "AGEOS"
+    },
+    climat: {
+        href: "http://www.gouvernement.ga/",
+        src: "img/logo/climat-logo-bw.png",
+        srcActive: "img/logo/climat-logo.png",
+        alt: "Climat"
+    },
+    forestAtlas: {
+        href: "http://gab.atlas-forestier.org/",
+        src: "img/logo/forestatlas-logo-bw.png",
+        srcActive: "img/logo/forestatlas-logo.png",
+        alt: "Atlas Forestier"
+    },
+    gfw: {
+        href: "http://globalforestwatch.org/",
+        src: "img/logo/gfw-logo-bw.png",
+        srcActive: "img/logo/gfw-logo.png",
+        alt: "GFW"
+    }
+}
+
+var partners = {
+    gabMin: {
+        href: "http://www.parcsgabon.org/",
+        src: "img/flag/anpn-logo-sm.png",
+        alt: "ANPN Logo"
+    },
+    wri: {
+        href: "http://www.wri.org/",
+        src: "img/logo/wri-logo.png",
+        alt: "WRI Logo"
+    }
+}
