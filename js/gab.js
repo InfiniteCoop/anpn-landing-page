@@ -60,13 +60,13 @@ var bcgImage = {
 var link = {
     en: {
         mapLink: "http://anpn.maps.arcgis.com/apps/webappviewer/index.html?id=e60071432e144899a32cb339864c1d2c",
-        planLink: "http://anpn.maps.arcgis.com/apps/MapTour/index.html?appid=8998a92632f64931be766656109e9dca&edit=true&folderid=b1449142ca8945acad1686e9533f40ed",
+        planLink: "http://anpn.maps.arcgis.com/apps/MapJournal/index.html?appid=bdc9ab59f79a4e88aea4f65eacff2a24",
         docsLink: "http://ageos.maps.arcgis.com/apps/MapJournal/index.html?appid=d3f4bf5903a545de9ebe20314cfb9332"
 
     },
     fr: {
         mapLink: "http://anpn.maps.arcgis.com/apps/webappviewer/index.html?id=e60071432e144899a32cb339864c1d2c",
-        planLink: "http://anpn.maps.arcgis.com/apps/MapTour/index.html?appid=8998a92632f64931be766656109e9dca&edit=true&folderid=b1449142ca8945acad1686e9533f40ed",
+        planLink: "http://anpn.maps.arcgis.com/apps/MapJournal/index.html?appid=bdc9ab59f79a4e88aea4f65eacff2a24",
         docsLink: "http://ageos.maps.arcgis.com/apps/MapJournal/index.html?appid=d3f4bf5903a545de9ebe20314cfb9332"
     }
 }
